@@ -1,7 +1,5 @@
-export default function SearchBar() {
+export default function SearchBar(props) {
     return (
-        <div>
-            <input class="w-64 border-4 rounded-lg" type="text" placeholder="통합검색" />
-        </div>
+        <input class={props.class} type="text" placeholder="통합검색" />
     );
 }

@@ -25,18 +25,18 @@ export default function Carousel() {
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      <div class="w-128">
+      <div class="w-[45vw]">
         <Slider {...settings}>
-          <div class="flex flex-col place-content-center items-center border-2 h-32">
-            <p class="text-4xl">마감 임박 강의 보러가기</p>
-            <p>10.10~11.10</p>
+          <div>
+            <p class="text-center text-4xl">마감 임박 강의 보러가기</p>
+            <p class="text-center">10.10~11.10</p>
           </div>
-          <div class="flex flex-col place-content-center items-center border-2 h-32">
-            <p class="text-4xl">CPA 인정 과목 변경사항</p>
-            <p class="text-2xl">2024년 기준</p>
+          <div>
+            <p class="text-center text-4xl">CPA 인정 과목 변경사항</p>
+            <p class="text-center text-2xl">2024년 기준</p>
           </div>
-          <div class="flex flex-col place-content-center items-center border-2 h-32">
-            <p class="text-4xl">ABC에듀 연계행사 안내</p>
+          <div>
+            <p class="text-center text-4xl">ABC에듀 연계행사 안내</p>
           </div>
         </Slider>
       </div>
