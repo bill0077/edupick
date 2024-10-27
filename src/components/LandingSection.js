@@ -1,6 +1,6 @@
 import logoImg from "../images/logo.png";
 
-export default function Introduction() {
+export default function LandingSection() {
     return (
         <div class="flex flex-col items-end space-y-2">
             {/*<h1 class="text-7xl font-bold">eduPick</h1>*/}
