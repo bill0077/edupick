@@ -1,13 +1,8 @@
-import logoImg from "../images/logo.png";
-
 export default function LandingSection() {
     return (
-        <div class="flex flex-col items-end space-y-2">
-            {/*<h1 class="text-7xl font-bold">eduPick</h1>*/}
-            <div class="w-[20vw]">
-                <img src={logoImg} alt="eduPick logo"/>
-            </div>
-            <p class="text-xl">전국의 모든 학점은행 간단히 확인하자</p>
+        <div class="flex flex-col items-center space-y-2">
+            <p class="font-['Tenada'] text-7xl">eduPick</p>
+            <p class="text-2xl">전국의 모든 과목을 한번에 비교해보세요</p>
         </div>
     );
 }

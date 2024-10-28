@@ -1,20 +1,17 @@
 export default function CourseDetailCard(props) {
     return (
-        <div class="h-[15vh] border-2 flex justify-center items-center space-x-4 space-y-2">
-            <div class="w-[20vw] mr-4 justify-between">
-                <div class="flex">
-                    <div class="h-[10vh] mx-2 flex items-center bg-slate-100">
-                        <h3>{props.category}</h3>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold">{props.name}</h3>
-                        <p class="text-2xl">{props.price}</p>
-                    </div>
-                </div>
+        <div class='w-[50vw] border-2 rounded-xl p-8 space-y-2'>
+            <div>
+                <a class="text-xl text-sky-600" href={props.link}>{props.link}</a>
             </div>
-            <div class="flex flex-col items-end">
-                <p class="mx-2">{props.date}</p>
-                <a class="mx-2" href={props.link}>{props.link}</a>
+            <div>
+                <p class="text-md text-stone-800 font-bold">{props.category}</p>
+                <p class="text-2xl font-bold">{props.name}</p>
+            </div>
+            <p class="text-xl font-bold text-blue-700">{props.price}원</p>
+            <div>
+                <p>수강신청기간 {props.register_date}</p>
+                <p>수강기간 {props.semester_date}</p>
             </div>
         </div>
     );
