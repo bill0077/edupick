@@ -1,6 +1,6 @@
 export default function CourseDetailCard(props) {
     return (
-        <div class='w-[50vw] border-2 rounded-xl p-8 space-y-2'>
+        <div class='w-[45vw] border-2 rounded-xl p-8 space-y-2'>
             <div>
                 <a class="text-xl text-sky-600" href={props.link}>{props.link}</a>
             </div>
@@ -10,8 +10,8 @@ export default function CourseDetailCard(props) {
             </div>
             <p class="text-xl font-bold text-blue-700">{props.price}원</p>
             <div>
-                <p>수강신청기간 {props.register_date}</p>
-                <p>수강기간 {props.semester_date}</p>
+                <p class="text-stone-600">수강신청기간: {props.register_date}</p>
+                <p class="text-stone-600">수강기간: {props.semester_date}</p>
             </div>
         </div>
     );
