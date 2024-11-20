@@ -82,17 +82,17 @@ export default function CoursePriceComparisonPage() {
     return (
         <div>
             <Header selected={2}/>
-            <div class="flex p-8 space-x-12">
-                <div class="w-[8vw] mx-8 m-12">
+            <div class="sm:flex m-1 sm:p-8 sm:space-x-12">
+                <div class="order-1 sm:w-[8vw] sm:mx-8 my-4 sm:m-12">
                     <CategoryTab courseList={courseList} handleTabNumber={handleTabNumber}/>
                 </div>
-                <div class="pt-8 space-y-4">
-                    <p class='text-4xl font-bold text-stone-800'>{courseName}</p>
-                    <p class="text-stone-500">{courses.length}개의 검색결과</p>
-                    {courses}
-                </div>
-                <div class="fixed pl-[65vw] my-12">
+                <div class="order-2 sm:fixed sm:pl-[65vw] sm:my-12">
                     <SearchBar onSubmit={handleSubmit} />
+                </div>
+                <div class="order-3 pt-8 space-y-2 sm:space-y-4">
+                    <p class='text-2xl sm:text-4xl font-bold text-stone-800'>{courseName}</p>
+                    <p class="text-sm text-stone-500">{courses.length}개의 검색결과</p>
+                    {courses}
                 </div>
             </div>
         </div>

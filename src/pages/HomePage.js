@@ -16,7 +16,7 @@ export default function Home() {
     return (
     <div>
         <Header selected={0}/>
-        <div class="flex flex-col items-center m-16 space-y-6">
+        <div class="flex flex-col items-center space-y-6 sm:m-16">
             <LandingSection />
             <SearchBar onSubmit={handleSubmit}/>
         </div>
