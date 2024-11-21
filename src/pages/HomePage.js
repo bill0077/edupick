@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-import Carousel from '../components/Carousel.js';
 import LandingSection from '../components/LandingSection.js';
 import Header from "../components/Header.js";
 

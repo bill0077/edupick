@@ -18,7 +18,7 @@ export default function Header({ selected }) {
                     <p class={`${selected===1?'bg-sky-100 text-blue-600':'text-stone-600'} px-2 py-1 rounded-lg text-xs sm:text-base`}>최저가비교</p>
                 </Link>
                 <Link to="/course-comparison?query=">
-                    <p class={`${selected===2?'bg-sky-100 text-blue-600':'text-stone-600'} px-2 py-1 rounded-lg text-xs sm:text-base`}>가격비교</p>
+                    <p class={`${selected===2?'bg-sky-100 text-blue-600':'text-stone-600'} px-2 py-1 rounded-lg text-xs sm:text-base`}>과목조회</p>
                 </Link>
                 <Link to="/not-ready?tab=3">
                     <p class={`${selected==='3'?'bg-sky-100 text-blue-600':'text-stone-600'} px-2 py-1 rounded-lg text-xs sm:text-base`}>자격증요건</p>                    
